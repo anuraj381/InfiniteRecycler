@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }
         dh = new Gson().fromJson(json, dataEnter.class);
 
-        //Here I am getting data of 10 posts from this parsed JSON, but in real app we get 1st page with 10 post from rest api
+        //Here I am getting data of 5 posts from this parsed JSON, but in real app we get 1st page with 5 post from rest api
         de = new dataEnter();
         de.setPosts(new ArrayList<post>());
         for (int i = 0; i < PAGE_SIZE; i++) {
